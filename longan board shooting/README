@@ -1,0 +1,3 @@
+See longan board shooting/src/assembly/example.S for assembly code(to build Menu)
+See enemy.c and enemy.h and main.c for C++ code(to build the game)
+Only implement one scene, so you will enter the same game whatever scene you choose
