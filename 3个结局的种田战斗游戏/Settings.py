@@ -21,7 +21,7 @@ class PlayerSettings:
     playerHP = 20
     playerAttack = 5
     playerDefence = 1
-    playerMoney = 0
+    playerMoney = 100
     playerPotion = 0
     playerCabbage = 0
     playerWatermelon = 0
@@ -104,6 +104,7 @@ class Font:
                     ]
     npc_dialogue2 = ["Hello! Maybe you did a great job yesterday?",
                      "If so, you can go harvest the fruit now. But these contaminated plants cannot be used to eat.",
+                     "Because the water is polluted, I'm so sorry about that but you can't plant any plants today...",
                      "Perhaps you can find other uses for it in the shopping desk……",
                      "And don't forget kill monsters underground.",
                      "Perhaps you have already discovered that you obtained many debris after killing the monster.",
@@ -308,8 +309,8 @@ class GamePath:
 class BgmPath:
     BgmMain = r".\assets\bgm\K.K.House.ogg"
     BgmHome = r".\assets\bgm\Prelude.ogg"
-    BgmWild = r".\assets\bgm\The_last_Battle.ogg"
-    BgmLose = r".\assets\bgm\LOSER.ogg"
+    BgmWild = r".\assets\bgm\Chaos.ogg"
+    BgmLose = r".\assets\bgm\the_spring_lullaby.ogg"
     BgmThunder = r".\assets\bgm\thunder.wav"
     BgmYell = r".\assets\bgm\yell.mp3"
     BgmFire = r".\assets\bgm\fire.wav"

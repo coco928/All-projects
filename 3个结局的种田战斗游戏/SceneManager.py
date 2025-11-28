@@ -22,6 +22,7 @@ class SceneManager:
         self.battleBox = None
         self.player = player
         self.key = key
+        self.has_planted=False
 
     def update_collide(self):
         # Player -> Obstacles
@@ -199,13 +200,14 @@ class SceneManager:
                 "Bury a BroccoliSeed Here":"",
                 "Exit":""})
                     self.scene.shoppingBox.render()
-                if field.is_planted:
+                if field.is_planted and self.has_planted == False:
                     if field.cabbage:
                         self.player.fruits_planted.add(Fruit(field, GamePath.cabbage))
                     elif field.watermelon:
                         self.player.fruits_planted.add(Fruit(field, GamePath.watermelon))
                     elif field.broccoli:
                         self.player.fruits_planted.add(Fruit(field, GamePath.broccoli))
+                    self.has_planted = True
 
         elif self.player.day >1:
             for fruit in self.player.fruits_planted:
